@@ -26,6 +26,6 @@ To start the console user interface, type:
 
   `java -jar Pendlersupport.jar --console`
 
-For logging, the following options are available (log goes to *STDOUT*):
+For logging, the following options are available (log goes to *STDERR*):
 
   `java -jar Pendlersupport.jar [--console] --log [debug|warning|error]`
