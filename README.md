@@ -22,7 +22,7 @@ Start the application with the following command to get the graphical user inter
 
   `java -jar Pendlersupport.jar`
 
-The start the console user interface, type:
+To start the console user interface, type:
 
   `java -jar Pendlersupport.jar --console`
 
