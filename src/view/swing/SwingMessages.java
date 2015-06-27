@@ -16,7 +16,7 @@ import ch.zhaw.mas8i.pendlersupport.view.Messages;
  */
 public class SwingMessages extends JLabel implements Messages {
 	private static final long serialVersionUID = 1L;
-	private static final Object lock = new Object();
+	private static final Object LOCK = new Object();
 
 	/**
 	 * Constructor set the text to " " to force the UI's
@@ -28,7 +28,7 @@ public class SwingMessages extends JLabel implements Messages {
 	
 	@Override
 	public void setMessage(Exception ex) {
-		synchronized(lock) {
+		synchronized(LOCK) {
 			try {
 				throw ex;
 			}
@@ -63,7 +63,7 @@ public class SwingMessages extends JLabel implements Messages {
 				} catch (InterruptedException e) {
 					Log.warning(e.getMessage());
 				}
-				synchronized (lock) {
+				synchronized (LOCK) {
 					if (text.equals(SwingMessages.this.getText())) {
 						SwingMessages.this.setText(" ");
 					}

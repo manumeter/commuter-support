@@ -11,7 +11,7 @@ import ch.zhaw.mas8i.pendlersupport.model.TransportDataException;
 /**
  * Interface to the data source.
  */
-public interface TransportData {
+interface TransportData {
 	
 	/**
 	 * Get a sorted set of time objects for a given connection after the given

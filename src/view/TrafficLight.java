@@ -7,7 +7,7 @@ import ch.zhaw.mas8i.pendlersupport.model.Time;
  * This is a UI component, Observer for TrafficLightObservable
  * and used to update the status about the current connection.
  */
-public interface TrafficLight {
+interface TrafficLight {
 	
 	/**
 	 * Update the status and time for the current connection.

@@ -75,6 +75,7 @@ public class Start {
 						case "debug":   Log.setLevel(Level.ALL);     break;
 						case "warning": Log.setLevel(Level.WARNING); break;
 						case "error":   Log.setLevel(Level.SEVERE);  break;
+						default:        Log.setLevel(Level.SEVERE);  break;
 					}
 				}
 				next = arg.equals("--log");

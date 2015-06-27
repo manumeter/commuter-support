@@ -51,6 +51,7 @@ public class SwingTrafficLight extends JPanel implements TrafficLight {
 			case ORANGE:  timeLabel.setToolTipText("You will need to hurry to catch the connection at " + timeLabelText + "."); break;
 			case RED:     timeLabel.setToolTipText("You missed the last connection, the next one is too far away (" + timeLabelText + ")."); break;
 			case UNKNOWN: timeLabel.setToolTipText(""); break;
+			default:      timeLabel.setToolTipText(""); break;
 		}
 		
 		this.status = status;
@@ -126,7 +127,7 @@ public class SwingTrafficLight extends JPanel implements TrafficLight {
 			innerGap = width / 10;
 		}
 		
-		switch(status) {
+		switch (status) {
 			case GREEN:   return new Rectangle((x + innerGap), (y + innerGap + width * 2), (width - innerGap * 2), (width - innerGap * 2));
 			case ORANGE:  return new Rectangle((x + innerGap), (y + innerGap + width), (width - innerGap * 2), (width - innerGap * 2));
 			case RED:     return new Rectangle((x + innerGap), (y + innerGap), (width - innerGap * 2), (width - innerGap * 2));

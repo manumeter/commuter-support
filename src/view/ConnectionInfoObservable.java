@@ -6,7 +6,7 @@ import ch.zhaw.mas8i.pendlersupport.model.Connection;
  * The Observable for ConnectionInfo, used to inform a UI
  * component if the connection has changed.
  */
-public interface ConnectionInfoObservable extends MessagesObservable {
+interface ConnectionInfoObservable extends MessagesObservable {
 	
 	/**
 	 * @param observer The observer to add

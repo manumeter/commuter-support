@@ -41,7 +41,7 @@ public class OpenData implements TransportData {
 	/**
 	 * @return The only existing instance of OpenData or a new one if there is no existing yet
 	 */
-	public static OpenData getInstance() {
+	public static synchronized OpenData getInstance() {
 		if (instance == null) {
 			instance = new OpenData();
 		}

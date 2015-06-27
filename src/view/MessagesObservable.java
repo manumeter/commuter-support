@@ -4,7 +4,7 @@ package ch.zhaw.mas8i.pendlersupport.view;
  * The Observable for Messages, used to send a message
  * to a UI component.
  */
-public interface MessagesObservable {
+interface MessagesObservable {
 	
 	/**
 	 * @param observer The observer to add

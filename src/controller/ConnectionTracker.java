@@ -50,7 +50,7 @@ public class ConnectionTracker implements Runnable, TrafficLightObservable {
 	 * @param configHandler ConfigurationHandler object
 	 * @return The only existing instance of ConnectionTracker or a new one if there is no existing yet
 	 */
-	public static ConnectionTracker getInstance(TransportData data, ConfigurationHandler configHandler) {
+	public static synchronized ConnectionTracker getInstance(TransportData data, ConfigurationHandler configHandler) {
 		if (instance == null) {
 			instance = new ConnectionTracker(data, configHandler);
 		}

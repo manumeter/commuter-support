@@ -11,7 +11,7 @@ import ch.zhaw.mas8i.pendlersupport.view.ConnectionInfoObservable;
  * To notify the UI, it's also an Observable for ConnectionInfo, which itself
  * extends the MessagesObservable.
  */
-public interface ConfigurationHandler extends ConnectionInfoObservable {
+interface ConfigurationHandler extends ConnectionInfoObservable {
 
 	/**
 	 * @param config Configuration to set globally

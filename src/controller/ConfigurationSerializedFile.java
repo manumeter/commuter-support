@@ -38,7 +38,7 @@ public class ConfigurationSerializedFile implements ConfigurationHandler {
 	 * @param filePath Path to the file to use for configuration save/load
 	 * @return The only existing instance of ConfigurationSerializedFile or a new one if there is no existing yet
 	 */
-	public static ConfigurationHandler getInstance(String filePath) {
+	public static synchronized ConfigurationHandler getInstance(String filePath) {
 		if (instance == null) {
 			instance = new ConfigurationSerializedFile(filePath);
 		}
